@@ -1,0 +1,44 @@
+spring:
+  profiles:
+    active: qa
+
+
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8000
+
+
+default:
+  course:
+    name: JAVA
+    chapterCount: 4
+
+course:
+  name: JAVA
+  chapterCount: 4
+  rating: 4.5
+  author: Lokman
+
+
+
+---
+spring:
+  profiles: qa
+
+server:
+  port: 8020
+
+
+default:
+  course:
+    name: PYTHON
+    chapterCount: 3
+
+course:
+  name: PYTHON
+  chapterCount: 3
+  rating: 5
+  author: Misho
